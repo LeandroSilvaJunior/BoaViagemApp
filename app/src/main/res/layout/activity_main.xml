@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_boaViagem"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/boa_viagem"
+        android:textAlignment="center"
+        android:textSize="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_nova_viagem"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@+id/tv_boaViagem"
+        app:srcCompat="@android:drawable/ic_menu_mapmode"
+        tools:layout_editor_absoluteX="34dp"
+        tools:ignore="MissingConstraints"
+        android:onClick="abrirFormViagem"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nova viagem"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_nova_viagem"
+        app:layout_constraintStart_toStartOf="@+id/iv_nova_viagem"
+        app:layout_constraintTop_toBottomOf="@+id/iv_nova_viagem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
